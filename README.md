@@ -109,11 +109,11 @@ Fonts and colors were carefully chosen to give the application a distinctive bra
 
 These are the steps to deploy Beer WareHaus locally.
 
-1.  From the application's [repository](https://github.com/jumboduck/beer-warehaus), click the "code" button and download the zip of the repository.
+1.  From the application's [repository](https://github.com/waterrot/The-Bookstore), click the "code" button and download the zip of the repository.
 
     Alternatively, you can clone the repository using the following line in your terminal:
 
-        git clone https://github.com/jumboduck/beer-warehaus.git
+        git clone https://github.com/waterrot/The-Bookstore.git
 
 2.  Access the folder in your terminal window and install the application's required modules using the following command:
 
