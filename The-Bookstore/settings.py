@@ -24,7 +24,7 @@ DEBUG = development
 if development:
     ALLOWED_HOSTS = ['localhost']
 else:
-    ALLOWED_HOSTS = ['the-bookstore-holland.herokuapp.com/']
+    ALLOWED_HOSTS = ['the-bookstore-holland.herokuapp.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -96,7 +96,7 @@ if development:
     }
 else:
     DATABASES = {
-        'default': dj_database_url.parse('postgres://vmmcpgebnyitfs:272be9372ad34f5b050e6a7f79331fab8352cb36c8d51d3f1ceb5a89f6ef0f89@ec2-54-229-68-88.eu-west-1.compute.amazonaws.com:5432/ddbcc8j6i00sep')
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 
 # Password validation
