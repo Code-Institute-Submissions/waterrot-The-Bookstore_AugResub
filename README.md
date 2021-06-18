@@ -75,7 +75,7 @@ This project is my fourth and final Milestone Project in the Code Institute's Fu
 
 Following these user stories, wireframes were drawn to provide a starting point and guidance throughout the development process.
 
-*this is the place where the wireframe will be*
+*this is the place where the wireframe will be in the future*
 
 ### Data Structure
 
