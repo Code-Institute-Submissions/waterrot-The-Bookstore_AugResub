@@ -17,14 +17,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0nzyusyv7rqd$u3xpl@42b&jf7dqh*7_pvv=sz(-_erps5d+o1'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
 if development:
     ALLOWED_HOSTS = ['localhost']
 else:
-    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+    ALLOWED_HOSTS = ['the-bookstore-holland.herokuapp.com/']
 
 # Application definition
 INSTALLED_APPS = [
@@ -86,15 +86,19 @@ LOGIN_REDIRECT_URL = '/'
 WSGI_APPLICATION = 'The-Bookstore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-DATABASES = {
-    'default': dj_database_url.parse('postgres://vmmcpgebnyitfs:272be9372ad34f5b050e6a7f79331fab8352cb36c8d51d3f1ceb5a89f6ef0f89@ec2-54-229-68-88.eu-west-1.compute.amazonaws.com:5432/ddbcc8j6i00sep')
-}
+
+if development:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+else:
+    DATABASES = {
+        'default': dj_database_url.parse('postgres://vmmcpgebnyitfs:272be9372ad34f5b050e6a7f79331fab8352cb36c8d51d3f1ceb5a89f6ef0f89@ec2-54-229-68-88.eu-west-1.compute.amazonaws.com:5432/ddbcc8j6i00sep')
+    }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
