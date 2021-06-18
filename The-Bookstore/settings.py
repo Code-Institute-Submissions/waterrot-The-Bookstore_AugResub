@@ -112,7 +112,7 @@ WSGI_APPLICATION = 'The-Bookstore.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://etuteefzzyetem:0e3fdf5ff1b9756f684bda2bd4645129d75828f0cc1095fe7df3cba9791ae15a@ec2-34-242-89-204.eu-west-1.compute.amazonaws.com:5432/d6ih6dakge9mqb')
+    'default': dj_database_url.parse('postgres://vmmcpgebnyitfs:272be9372ad34f5b050e6a7f79331fab8352cb36c8d51d3f1ceb5a89f6ef0f89@ec2-54-229-68-88.eu-west-1.compute.amazonaws.com:5432/ddbcc8j6i00sep')
 }
 
 
