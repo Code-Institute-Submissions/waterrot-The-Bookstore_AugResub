@@ -1,5 +1,5 @@
 """
-WSGI config for My_ecommerce_shop project.
+WSGI config for The-bookstore project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'My_ecommerce_shop.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'The-Bookstore.settings')
 
 application = get_wsgi_application()

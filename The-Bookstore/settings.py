@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'My_ecommerce_shop.urls'
+ROOT_URLCONF = 'The-Bookstore.urls'
 
 TEMPLATES = [
     {
@@ -97,7 +97,7 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'My_ecommerce_shop.wsgi.application'
+WSGI_APPLICATION = 'The-Bookstore.wsgi.application'
 
 
 # Database
