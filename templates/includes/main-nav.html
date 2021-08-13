@@ -1,15 +1,9 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=children_books,climate_and_nature,cooking,fantasy_and_science_fiction,history_and_politics,horror,literature,personal_development,romantic_novel,travel_and_holiday" id="all-books-link">
                 All Books
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Genre</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
-            </div>
         </li>
 
         <li class="nav-item dropdown">
