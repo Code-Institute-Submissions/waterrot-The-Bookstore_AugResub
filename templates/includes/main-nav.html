@@ -1,32 +1,36 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="adult-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Adult Books
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Books
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="adult-books-link">
+            <div class="dropdown-menu border-0" aria-labelledby="all-books-link">
                 <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Author</a>
-                <a href="" class="dropdown-item ">By Genre</a>
                 <a href="" class="dropdown-item">By Rating</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Books</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="books-children-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Children Books
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="genre-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genre
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="books-children-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item">By Author</a>
-                <a href="" class="dropdown-item">By Age</a>
-                <a href="" class="dropdown-item">By Genre</a>
+            <div class="dropdown-menu border-0" aria-labelledby="genre-link">
+                <a href="{% url 'products'%}?category=children_books" class="dropdown-item">Children Books</a>
+                <a href="{% url 'products'%}?category=climate_and_nature" class="dropdown-item">Climate / Nature</a>
+                <a href="{% url 'products'%}?category=cooking" class="dropdown-item">Cooking</a>
+                <a href="{% url 'products'%}?category=fantasy_and_science_fiction" class="dropdown-item">Fantasy / Science Fiction</a>
+                <a href="{% url 'products'%}?category=history_and_politics" class="dropdown-item">History / Politics</a>
+                <a href="{% url 'products'%}?category=horror" class="dropdown-item">Horror</a>
+                <a href="{% url 'products'%}?category=literature" class="dropdown-item">Literature</a>
+                <a href="{% url 'products'%}?category=personal_development" class="dropdown-item">Personal Development</a>
+                <a href="{% url 'products'%}?category=romantic_novel" class="dropdown-item">Romantic Novel</a>
+                <a href="{% url 'products'%}?category=travel_and_holiday" class="dropdown-item">Travel / Holiday</a>
             </div>
         </li>
 
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="authors-link">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products'%}?category=authors" id="authors-link">
                 Authors
             </a>
         </li>
