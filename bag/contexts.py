@@ -13,6 +13,7 @@ def bag_contents(request):
 
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
+            product = get_object_or_404(Product, pk=item_id)
             # change the price change of the format back to the format name
             if format == '-2':
                 item_format = 'ebook'
@@ -22,10 +23,7 @@ def bag_contents(request):
                 item_format = 'softcover'
             elif format == '4':
                 item_format = 'hardcover'
-            else:
-                item_format = 'softcover'
 
-            product = get_object_or_404(Product, pk=item_id)
             # get the extra price for the diffent formats
             extra_price = int(product.format)
             # the price for one item
@@ -43,6 +41,7 @@ def bag_contents(request):
                 'total_price_item': total_price_item,
                 'price_per_item': price_per_item,
                 'item_format': item_format,
+                'format': format,
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
@@ -56,8 +55,6 @@ def bag_contents(request):
                     item_format = 'softcover'
                 elif format == '4':
                     item_format = 'hardcover'
-                else:
-                    item_format = 'softcover'
 
                 # get the extra price for the diffent formats
                 extra_price = int(format)
@@ -76,6 +73,7 @@ def bag_contents(request):
                     'item_format': item_format,
                     'total_price_item': total_price_item,
                     'price_per_item': price_per_item,
+                    'format': format,
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
