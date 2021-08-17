@@ -25,10 +25,19 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2)
     rating = models.DecimalField(max_digits=6, decimal_places=2,
                                  null=True, blank=True)
+    has_formats = models.BooleanField(default=False, null=True, blank=True)
     author = models.CharField(max_length=254, null=True, blank=True)
     new_release = models.BooleanField(default=False, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Format(models.Model):
+    name = models.CharField(max_length=64, null=True, blank=True)
+    extra_price = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):
         return self.name
