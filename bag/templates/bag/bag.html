@@ -44,11 +44,28 @@
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0"><strong>Size: </strong>{% if item.product.has_formats %}{{ item.formats|upper }}{% else %}N/A{% endif %}</p>
+                                        <p class="my-0"><strong>Format: </strong>
+                                            <!-- the value of an ebook is -2, so if format is -2 then it is an ebook -->
+                                            {% if item.format == "-2" %}
+                                                ebook
+                                            <!-- the value of an audiobook is -1, so if format is -1 then it is an audiobook -->
+                                            {% elif item.format == "-1" %}
+                                                audiobook
+                                            <!-- the value of a softcover is 0, so if format is 0 then it is a softcover -->
+                                            {% elif item.format == "0" %}
+                                                softcover
+                                            <!-- the value of an hardcover is 4, so if format is 4 then it is a hardcover -->
+                                            {% elif item.format == "4" %}
+                                                Hardcover
+                                            <!-- in all other cases it is the standard softcover -->
+                                            {% else %}
+                                                what
+                                            {% endif %}
+                                        </p>
                                         <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">${{ item.price_per_item }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="form update-form" method="POST" action="">
@@ -82,7 +99,7 @@
                                         <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                        <p class="my-0">${{ item.total_price_item }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
