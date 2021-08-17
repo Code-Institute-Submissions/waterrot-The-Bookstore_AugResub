@@ -117,5 +117,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script type="text/javascript">
+    $('#id_product_format').change(function(){
+        var price = parseFloat("{{ product.price }}");
+        $('#id_product_format :selected').each(function() {
+            price += Number($(this).val());
+        });
+        $("#product-price").html("$" + price.toFixed(2));
+    });
+</script>
 {% include 'products/includes/quantity_input_script.html' %}
 {% endblock %}
