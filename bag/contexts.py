@@ -13,15 +13,28 @@ def bag_contents(request):
 
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
+            # change the price change of the format back to the format name
+            if format == '-2':
+                item_format = 'ebook'
+            elif format == '-1':
+                item_format = 'audiobook'
+            elif format == '0':
+                item_format = 'softcover'
+            elif format == '4':
+                item_format = 'hardcover'
+            else:
+                item_format = 'softcover'
+
             product = get_object_or_404(Product, pk=item_id)
-            # get the extra price for the diffent format
+            # get the extra price for the diffent formats
             extra_price = int(product.format)
-            # the price for an item
+            # the price for one item
             item_price = product.price + extra_price
-            # get the total price per line
-            total += item_data * item_price
-            total_price_item = float(item_data * item_price)
             price_per_item = float(item_price)
+            # get the total price per line
+            total_price_item = float(item_data * item_price)
+
+            total += item_data * item_price
             product_count += item_data
             bag_items.append({
                 'item_id': item_id,
@@ -29,24 +42,38 @@ def bag_contents(request):
                 'product': product,
                 'total_price_item': total_price_item,
                 'price_per_item': price_per_item,
+                'item_format': item_format,
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
             for format, quantity in item_data['items_by_format'].items():
-                # get the extra price for the diffent format
+                # change the price change of the format back to the format name
+                if format == '-2':
+                    item_format = 'ebook'
+                elif format == '-1':
+                    item_format = 'audiobook'
+                elif format == '0':
+                    item_format = 'softcover'
+                elif format == '4':
+                    item_format = 'hardcover'
+                else:
+                    item_format = 'softcover'
+
+                # get the extra price for the diffent formats
                 extra_price = int(format)
-                # the price for an item
+                # the price for one item
                 item_price = product.price + extra_price
-                # get the total price per line
-                total += quantity * item_price
-                total_price_item = float(quantity * item_price)
                 price_per_item = float(item_price)
+                # get the total price per line
+                total_price_item = float(quantity * item_price)
+                
+                total += quantity * item_price
                 product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
                     'quantity': item_data,
                     'product': product,
-                    'format': format,
+                    'item_format': item_format,
                     'total_price_item': total_price_item,
                     'price_per_item': price_per_item,
                 })
