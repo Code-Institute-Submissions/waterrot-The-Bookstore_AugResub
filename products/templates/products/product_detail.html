@@ -68,6 +68,13 @@
                                         <option value="4">hardcover</option>
                                     </select>
                                 </div>
+                            {% else %}
+                                <div class="col-12">
+                                    <p><strong>Format:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_format" id='id_product_format'>
+                                        <option value="0" selected>softcover</option>
+                                    </select>
+                                </div>
                             {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
