@@ -66,12 +66,12 @@ def bag_contents(request):
                 price_per_item = float(item_price)
                 # get the total price per line
                 total_price_item = float(quantity * item_price)
-                
+               
                 total += quantity * item_price
                 product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
-                    'quantity': item_data,
+                    'quantity': quantity,
                     'product': product,
                     'item_format': item_format,
                     'total_price_item': total_price_item,
