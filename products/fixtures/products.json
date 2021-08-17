@@ -10,6 +10,7 @@
             "category":2,
             "rating":4.8,
             "author":1,
+            "has_formats":false,
             "new_release":false,
             "image_url":"https://images-na.ssl-images-amazon.com/images/I/51guEYJpEuL._SX378_BO1,204,203,200_.jpg",
             "image":"001thehobbit.jpg"
@@ -26,6 +27,7 @@
             "category":2,
             "rating":4.7,
             "author":2,
+            "has_formats":false,
             "new_release":false,
             "image_url":"https://images-na.ssl-images-amazon.com/images/I/51BfYSYSfxL._SX336_BO1,204,203,200_.jpg",
             "image":"002percyjacksonandtheolympians.jpg"
