@@ -14,25 +14,41 @@ def bag_contents(request):
     for item_id, item_data in bag.items():
         if isinstance(item_data, int):
             product = get_object_or_404(Product, pk=item_id)
-            extra_price = int(product.format)   # get the extra price for the diffent format
-            total += item_data * (product.price + extra_price)  # get the total price per line
+            # get the extra price for the diffent format
+            extra_price = int(product.format)
+            # the price for an item
+            item_price = product.price + extra_price
+            # get the total price per line
+            total += item_data * item_price
+            total_price_item = float(item_data * item_price)
+            price_per_item = float(item_price)
             product_count += item_data
             bag_items.append({
                 'item_id': item_id,
                 'quantity': item_data,
                 'product': product,
+                'total_price_item': total_price_item,
+                'price_per_item': price_per_item,
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
             for format, quantity in item_data['items_by_format'].items():
-                extra_price = int(format)       # get the extra price for the diffent format
-                total += quantity * (product.price + extra_price)   # get the total price per line
+                # get the extra price for the diffent format
+                extra_price = int(format)
+                # the price for an item
+                item_price = product.price + extra_price
+                # get the total price per line
+                total += quantity * item_price
+                total_price_item = float(quantity * item_price)
+                price_per_item = float(item_price)
                 product_count += quantity
                 bag_items.append({
                     'item_id': item_id,
                     'quantity': item_data,
                     'product': product,
                     'format': format,
+                    'total_price_item': total_price_item,
+                    'price_per_item': price_per_item,
                 })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
