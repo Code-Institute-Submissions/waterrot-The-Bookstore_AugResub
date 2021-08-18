@@ -1,0 +1,340 @@
+[
+    {
+        "pk":1,
+        "model":"products.author",
+        "fields":{
+            "name":"J.R.R.Tolkien",
+            "date_of_birth":"3rd January 1892",
+            "birth_country":"South Africa",
+            "summary":"He served as the Rawlinson and Bosworth Professor of Anglo-Saxon and Fellow of Pembroke College, Oxford from 1925 to 1945 and the Merton Professor of English Language and Literature and Fellow of Merton College, Oxford from 1945 to 1959. He was a close friend of C. S. Lewis, a co-member of the informal literary discussion group The Inklings. Tolkien was appointed a Commander of the Order of the British Empire by Queen Elizabeth II on 28 March 1972.",
+            "amazon_link":"https://www.amazon.com/J-R-R-Tolkien/e/B000ARC6KA?ref=sr_ntt_srch_lnk_1&qid=1629261404&sr=8-1",
+            "profile_picture":"jrrtolkien.jpg",
+            "books":"The Hobbit, The Lord of the Rings, The Silmarillion"
+        }		
+    },
+    {
+        "pk":2,
+        "model":"products.author",
+        "fields":{
+            "name":"Rick Riordan",
+            "date_of_birth":"5th June 1964",
+            "birth_country":"Unites States",
+            "summary":"Richard Russell Riordan Jr. is an American author. He is known for writing the Percy Jackson & the Olympians series, about a teenager named Percy Jackson who discovers he is a son of the Greek god Poseidon. Riordan's books have been translated into forty-two languages and sold more than thirty million copies in the US.[2] 20th Century Fox adapted the first two books of his Percy Jackson series as part of a series of films. His books have spawned related media, such as graphic novels and short story collections.",
+            "amazon_link":"https://www.amazon.com/Rick-Riordan/e/B001HD0WE8?ref=sr_ntt_srch_lnk_1&qid=1629261526&sr=1-1",
+            "profile_picture":"rickriordan.jpg",
+            "books":"The Battle of the Labyrinth, The Last Olympian, The Son of Neptune"		
+        }		
+    },
+    {
+        "pk":3,
+        "model":"products.author",
+        "fields":{
+            "name":"Markus Zusak",
+            "date_of_birth":"23th June 1975",
+            "birth_country":"Australia",
+            "summary":"Markus Zusak (born 23 June 1975) is an Australian writer with Austrian and German roots. He is best known for The Book Thief and The Messenger (US title: I Am the Messenger), two novels which became international bestsellers. He won the Margaret A. Edwards Award in 2014.",
+            "amazon_link":"https://www.amazon.com/Markus-Zusak/e/B001H6EQ9W?ref=sr_ntt_srch_lnk_1&qid=1629261575&sr=1-1",
+            "profile_picture":"markuszusak.jpg",
+            "books":"The Book Thief, I Am the Messenger, Bridge of Clay"		
+        }	
+    },
+    {
+        "pk":4,
+        "model":"products.author",
+        "fields":{
+            "name":"Dav Pilkey",
+            "date_of_birth":"4th March 1966",
+            "birth_country":"United States",
+            "summary":"David Murray Pilkey Jr. is an American cartoonist, author and illustrator of children's literature. He is best known as the author and illustrator of the children's book series Captain Underpants, and the children's graphic novel series Dog Man.",
+            "amazon_link":"https://www.amazon.com/Dav-Pilkey/e/B000APCYV8?ref=sr_ntt_srch_lnk_1&qid=1629261608&sr=1-1",
+            "profile_picture":"davpilkey.jpg",
+            "books":"Dog Man: For Whom the Ball Rolls, Dog Man Unleashed, Dog Man and Cat Kid"
+        }		
+    },
+    {
+        "pk":5,
+        "model":"products.author",
+        "fields":{
+            "name":"Jeff Kinney",
+            "date_of_birth":"19th February 1971",
+            "birth_country":"United States",
+            "summary":"In 1998 Jeff came up with the idea for Diary of a Wimpy Kid, a story about a middle-school weakling named Greg Heffley. Jeff worked on his book for almost eight years before showing it to a publisher in New York. Jeff Kinney was born in 1971 in Maryland and attended the University of Maryland in the early 1990s. It was there that Jeff ran a comic strip called “Igdoof” in the campus newspaper, and he knew he wanted to be a cartoonist.",
+            "amazon_link":"https://www.amazon.com/Jeff-Kinney/e/B001J93AUI?ref=sr_ntt_srch_lnk_1&qid=1629261647&sr=1-1",
+            "profile_picture":"jeffkinney.jpg",
+            "books":"Rodrick Rules, The Last Straw, Dog Days"
+        }
+    },
+    {
+        "pk":6,
+        "model":"products.author",
+        "fields":{
+            "name":"Michael Evan Mann",
+            "date_of_birth":"28th December 1965",
+            "birth_country":"United States",
+            "summary":"Michael Evan Mann is an American climatologist and geophysicist. He is the director of the Earth System Science Center at Pennsylvania State University. Mann has contributed to the scientific understanding of historic climate change based on the temperature record of the past thousand years. He has pioneered techniques to find patterns in past climate change and to isolate climate signals from noisy data.",
+            "amazon_link":"https://www.amazon.com/Michael-E-Mann/e/B001KP3VIW?ref=sr_ntt_srch_lnk_1&qid=1629261694&sr=1-1",
+            "profile_picture":"michaelemann.jpg",
+            "books":"The New Climate War, The Hockey Stick and the Climate Wars, The Madhouse Effect"
+        }		
+    },
+    {
+        "pk":7,
+        "model":"products.author",
+        "fields":{
+            "name":"Elizabeth Kolbert",
+            "date_of_birth":"6th July 1961",
+            "birth_country":"United States",
+            "summary":"Elizabeth Kolbert is an American journalist, author, and visiting fellow at Williams College. She is best known for her Pulitzer Prize-winning book The Sixth Extinction: An Unnatural History and as an observer and commentator on environmentalism for The New Yorker magazine. Like The Sixth Extinction, her writing and other books, such as Field Notes from a Catastrophe and Under a White Sky often explore the crisis faced by humans in the Anthropocene.",
+            "amazon_link":"https://www.amazon.com/Elizabeth-Kolbert/e/B001JPC7CE?ref=sr_ntt_srch_lnk_1&qid=1629261738&sr=1-1",
+            "profile_picture":"elizabethkolbert.jpg",
+            "books":"The Sixth Extinction, Under a White Sky, Field Notes from a Catastrophe"	
+        }		
+    },
+    {
+        "pk":8,
+        "model":"products.author",
+        "fields":{
+            "name":"Steven E. Koonin",
+            "date_of_birth":"12th December 1951",
+            "birth_country":"United States",
+            "summary":"Steven E. Koonin is an American theoretical physicist and director of the Center for Urban Science and Progress at New York University. He is also a professor in the Department of Civil and Urban Engineering at NYU's Tandon School of Engineering. A former Obama administration official, he later became known as a skeptic on climate change, writing a book on the topic and participating in a Trump administration to conduct an 'adversarial' review on the subject.",
+            "amazon_link":"https://www.amazon.com/Steven-E-Koonin/e/B001H9Q9ZS?ref=sr_ntt_srch_lnk_1&qid=1629261775&sr=1-1",
+            "profile_picture":"stevenekoonin.jpg",
+            "books":"unsettled, "
+        }		
+    },
+    {
+        "pk":9,
+        "model":"products.author",
+        "fields":{
+            "name":"Amitav Ghosh",
+            "date_of_birth":"11th July 1956",
+            "birth_country":"India",
+            "summary":"Amitav Ghosh is an Indian writer and the winner of the 54th Jnanpith award, India’s highest literary honor, best known for his work in English fiction. Ghosh's ambitious novels use complex narrative strategies to probe the nature of national and personal identity, particularly of the people of India and Southeast Asia.",
+            "amazon_link":"https://www.amazon.com/Amitav-Ghosh/e/B00MI3ASCC?ref=sr_ntt_srch_lnk_1&qid=1629261806&sr=1-1",
+            "profile_picture":"amitavghosh.jpg",
+            "books":"Flood of Fire, The Glass Palace, The Hungry Tide"
+        }		 
+    },
+    {
+        "pk":10,
+        "model":"products.author",
+        "fields":{
+            "name":"Julia Child",
+            "date_of_birth":"15th August 1912",
+            "birth_country":"United States",
+            "summary":"Julia Carolyn Child was an American cooking teacher, author, and television personality. She is recognized for bringing French cuisine to the American public with her debut cookbook, Mastering the Art of French Cooking, and her subsequent television programs, the most notable of which was The French Chef, which premiered in 1963.",
+            "amazon_link":"https://www.amazon.com/Julia-Child/e/B000AQ0XXS?ref=sr_ntt_srch_lnk_1&qid=1629261847&sr=1-1",
+            "profile_picture":"juliachild.jpg",
+            "books":"Mastering the Art of French Cooking, The Way To Cook, Baking with Julia"
+        }		 
+    },
+    {
+        "pk":11,
+        "model":"products.author",
+        "fields":{
+            "name":"Nigella Lawson",
+            "date_of_birth":"6th January 1960",
+            "birth_country":"United States",
+            "summary":"Nigella Lucy Lawson is an English food writer and television cook. She is the daughter of Nigel Lawson, Lord Lawson of Blaby, a former Conservative Chancellor of the Exchequer, and Vanessa (née Salmon) Lawson, whose family owned the J. Lyons and Co. food and catering business.",
+            "amazon_link":"https://www.amazon.com/Nigella-Lawson/e/B001G0A3BY?ref=sr_ntt_srch_lnk_1&qid=1629261888&sr=1-1",
+            "profile_picture":"nigellalawson.jpg",
+            "books":"Cook Eat Repeat, How to Eat"
+        }		 
+    },
+    {
+        "pk":12,
+        "model":"products.author",
+        "fields":{
+            "name":"Anthony Bourdain",
+            "date_of_birth":"25th June 1956",
+            "birth_country":"United States",
+            "summary":"Anthony Michael Bourdain (/bɔːrˈdeɪn/; June 25, 1956 – June 8, 2018) was an American celebrity chef, author, and travel documentarian,[1][2][3] who starred in programs focusing on the exploration of international culture, cuisine, and the human condition.[4] Bourdain was a 1978 graduate of The Culinary Institute of America and a veteran of a number of professional kitchens during his career, which included many years spent as an executive chef at Brasserie Les Halles in Manhattan. He first became known for his bestselling book Kitchen Confidential: Adventures in the Culinary Underbelly (2000).",
+            "amazon_link":"https://www.amazon.com/Anthony-Bourdain/e/B001H6GY4C?ref=sr_ntt_srch_lnk_1&qid=1629261926&sr=1-1",
+            "profile_picture":"anthonybourdain.jpg",
+            "books":"Kitchen Confidential, Medium Raw, No Reservations"
+        }		 
+    },
+    {
+        "pk":13,
+        "model":"products.author",
+        "fields":{
+            "name":"J. K. Rowling",
+            "date_of_birth":"31st July 1965",
+            "birth_country":"England",
+            "summary":"J. K. Rowling, is a British author, philanthropist, film producer, television producer, and screenwriter. She is best known for writing the Harry Potter fantasy series, which has won multiple awards and sold more than 500 million copies, becoming the best-selling book series in history. The books are the basis of a popular film series, over which Rowling had overall approval on the scripts and was a producer on the final films. She also writes crime fiction under the pen name Robert Galbraith.",
+            "amazon_link":"https://www.amazon.com/J-K-Rowling/e/B000AP9A6K?ref=sr_ntt_srch_lnk_1&qid=1629261960&sr=1-1",
+            "profile_picture":"jkrowling.jpg",
+            "books":"Harry Potter and the Order of Phoenix, Harry Potter and The Goblet of Fire, Harry Potter and the Chamber of Secrets"
+        }		 
+    },
+    {
+        "pk":14,
+        "model":"products.author",
+        "fields":{
+            "name":"Brandon Sanderson",
+            "date_of_birth":"19th December 1975",
+            "birth_country":"United States",
+            "summary":"Brandon Sanderson (born December 19, 1975) is an American author of epic fantasy and science fiction. He is best known for the Cosmere fictional universe, in which most of his fantasy novels, most notably the Mistborn series and The Stormlight Archive, are set. Outside of the Cosmere, he has written several young adult[a] and juvenile series including The Reckoners, the Skyward series, and the Alcatraz series. He is also known for finishing Robert Jordan's high fantasy series The Wheel of Time.",
+            "amazon_link":"https://www.amazon.com/Brandon-Sanderson/e/B001IGFHW6?ref=sr_ntt_srch_lnk_1&qid=1629262008&sr=1-1",
+            "profile_picture":"brandonsanderson.jpg",
+            "books":"The Hero of Ages, Elantris, Mistborn Series"
+        }		 
+    },
+    {
+        "pk":15,
+        "model":"products.author",
+        "fields":{
+            "name":"Bill Bryson",
+            "date_of_birth":"8th December 1951",
+            "birth_country":"United States",
+            "summary":"William McGuire Bryson is an American–British author of books on travel, the English language, science, and other nonfiction topics. Born in the United States, he has been a resident of Britain for most of his adult life, returning to the U.S. between 1995 and 2003, and holds dual American and British citizenship. He served as the chancellor of Durham University from 2005 to 2011.",
+            "amazon_link":"https://www.amazon.com/Bill-Bryson/e/B000APXTVM?ref=sr_ntt_srch_lnk_1&qid=1629262047&sr=1-1",
+            "profile_picture":"billbryson.jpg",
+            "books":"Made in America, Shakespeare: The World as Stage, Notes from a Small Island"
+        }		 
+    },
+    {
+        "pk":16,
+        "model":"products.author",
+        "fields":{
+            "name":"David McCullough",
+            "date_of_birth":"7th July 1933",
+            "birth_country":"United States",
+            "summary":"David Gaub McCullough is an American author, narrator, popular historian, and lecturer. He is a two-time winner of the Pulitzer Prize and the National Book Award and a recipient of the Presidential Medal of Freedom, the United States' highest civilian award.",
+            "amazon_link":"https://www.amazon.com/David-McCullough/e/B000AP9I5I?ref=sr_ntt_srch_lnk_1&qid=1629262081&sr=1-1",
+            "profile_picture":"davidmccullough.jpg",
+            "books":"1776, The Johnstown Flood, The Path Between the Seas"
+        }		 
+    },
+    {
+        "pk":17,
+        "model":"products.author",
+        "fields":{
+            "name":"H. P. Lovecraft",
+            "date_of_birth":"20th August 1890",
+            "birth_country":"United States",
+            "summary":"Howard Phillips Lovecraft (August 20, 1890 – March 15, 1937) was an American writer of weird, science, fantasy, and horror fiction. Lovecraft is best known for his creation of a body of work that became known as the Cthulhu Mythos. Born in Providence, Rhode Island, Lovecraft spent most of his life in New England.",
+            "amazon_link":"https://www.amazon.com/H-P-Lovecraft/e/B000AQ40D2?ref=sr_ntt_srch_lnk_1&qid=1629262117&sr=1-1",
+            "profile_picture":"hplovecraft.jpg",
+            "books":"The Call of Cthulhu and Other Weird Stories, The Shadow Over Innsmouth, The Whisperer in Darkness"
+        }		 
+    },
+    {
+        "pk":18,
+        "model":"products.author",
+        "fields":{
+            "name":"Shirley Jackson",
+            "date_of_birth":"14th December 1916",
+            "birth_country":"United States",
+            "summary":"Shirley Hardie Jackson (December 14, 1916 – August 8, 1965) was an American writer, known primarily for her works of horror and mystery. Over the duration of her writing career, which spanned over two decades, she composed six novels, two memoirs, and more than 200 short stories.",
+            "amazon_link":"https://www.amazon.com/Shirley-Jackson/e/B000AQ3IYE?ref=sr_ntt_srch_lnk_1&qid=1629262158&sr=1-1",
+            "profile_picture":"shirleyjackson.jpg",
+            "books":"The Call of Cthulhu and Other Weird Stories, The Shadow Over Innsmouth, The Whisperer in Darkness"
+        }		 
+    },
+    {
+        "pk":19,
+        "model":"products.author",
+        "fields":{
+            "name":"Clive Barker",
+            "date_of_birth":"5th October 1952",
+            "birth_country":"England",
+            "summary":"Clive Barker (born 5 October 1952) is an English playwright, novelist, film director, and visual artist. Barker came to prominence in the mid-1980s with a series of short stories, the Books of Blood, which established him as a leading horror writer. He has since written many novels and other works, and his fiction has been adapted into films, notably the Hellraiser the first instalment of which he also wrote and directed the Candyman series. Barker also serves as an executive producer on the film Gods and Monsters, which won an Academy Award for Best Adapted Screenplay.",
+            "amazon_link":"https://www.amazon.com/Clive-Barker/e/B000APZZ00?ref=sr_ntt_srch_lnk_1&qid=1629262190&sr=1-1",
+            "profile_picture":"clivebarker.jpg",
+            "books":"The Damnation Game, Imajica, Coldheart Canyon"
+        }		 
+    },
+    {
+        "pk":20,
+        "model":"products.author",
+        "fields":{
+            "name":"Jane Austen",
+            "date_of_birth":"16th December 1775",
+            "birth_country":"United States",
+            "summary":"Jane Austen was an English novelist known primarily for her six major novels, which interpret, critique and comment upon the British landed gentry at the end of the 18th century. Austen's plots often explore the dependence of women on marriage in the pursuit of favourable social standing and economic security.",
+            "amazon_link":"https://www.amazon.com/Jane-Austen/e/B000APWOKO?ref=sr_ntt_srch_lnk_2&qid=1629262232&sr=1-2",
+            "profile_picture":"janeausten.jpg",
+            "books":"Mansfield Park, Northanger Abbey, Sense and Sensibility"
+        }		 
+    },
+    {
+        "pk":21,
+        "model":"products.author",
+        "fields":{
+            "name":"Virginia Woolf",
+            "date_of_birth":"25th January 1882",
+            "birth_country":"England",
+            "summary":"Adeline Virginia Woolf (25 January 1882 – 28 March 1941) was an English writer, considered one of the most important modernist 20th-century authors and a pioneer in the use of stream of consciousness as a narrative device. Woolf was born into an affluent household in South Kensington, London, the seventh child in a blended family of eight which included the modernist painter Vanessa Bell. Her mother was Julia Prinsep Jackson and her father Leslie Stephen. While the boys in the family received college educations, the girls were home-schooled in English classics and Victorian literature.",
+            "amazon_link":"https://www.amazon.com/Virginia-Woolf/e/B000AQ1T7W?ref=sr_ntt_srch_lnk_1&qid=1629262407&sr=1-1",
+            "profile_picture":"virginiawoolf.jpg",
+            "books":"Mrs. Dalloway, Orlando, To the Lighthouse"
+        }		 
+    },
+    {
+        "pk":22,
+        "model":"products.author",
+        "fields":{
+            "name":"Dale Carnegie",
+            "date_of_birth":"24th November 1888",
+            "birth_country":"United States",
+            "summary":"Dale Carnegie (spelled Carnagey until c. 1922; November 24, 1888 – November 1, 1955) was an American writer and lecturer, and the developer of courses in self-improvement, salesmanship, corporate training, public speaking, and interpersonal skills. Born into poverty on a farm in Missouri, he was the author of How to Win Friends and Influence People (1936), a bestseller that remains popular today. He also wrote How to Stop Worrying and Start Living (1948), Lincoln the Unknown (1932), and several other books.",
+            "amazon_link":"https://www.amazon.com/Dale-Carnegie/e/B00OIFV2S2?ref=sr_ntt_srch_lnk_1&qid=1629262470&sr=1-1",
+            "profile_picture":"dalecarnegie.jpg",
+            "books":"How to Win Friends and Influence People, The art of public speaking"
+        }		 
+    },
+    {
+        "pk":23,
+        "model":"products.author",
+        "fields":{
+            "name":"Jim Rohn",
+            "date_of_birth":"17th September 1930",
+            "birth_country":"United States",
+            "summary":"Emanuel James Rohn (September 17, 1930 – December 5, 2009) professionally known as Jim Rohn, was an American entrepreneur, author and motivational speaker.",
+            "amazon_link":"https://www.amazon.com/Jim-Rohn/e/B002TW1O8E?ref=sr_ntt_srch_lnk_1&qid=1629262515&sr=1-1",
+            "profile_picture":"jimrohn.jpg",
+            "books":"7 Strategies for Wealth & Happiness, Twelve Pillars, The Seasons of Life"
+        }		 
+    },
+    {
+        "pk":24,
+        "model":"products.author",
+        "fields":{
+            "name":"Nicholas Sparks",
+            "date_of_birth":"31th December 1965",
+            "birth_country":"United States",
+            "summary":"Nicholas Charles Sparks is an American novelist, screenwriter, and philanthropist. He has published twenty-two novels and two non-fiction books, all of which have been New York Times bestsellers, with over 115 million copies sold worldwide in more than 50 languages.",
+            "amazon_link":"https://www.amazon.com/Nicholas-Sparks/e/B000APGF36?ref=sr_ntt_srch_lnk_1&qid=1629262709&sr=1-1",
+            "profile_picture":"nicholassparks.jpg",
+            "books":"The Rescue, Message in a Bottle, Safe Haven"
+        }		 
+    },
+    {
+        "pk":25,
+        "model":"products.author",
+        "fields":{
+            "name":"Paul Theroux",
+            "date_of_birth":"10th April 1941",
+            "birth_country":"United States",
+            "summary":"Paul Edward Theroux (born April 10, 1941) is an American novelist and travel writer who has written numerous books, including the travelogue, The Great Railway Bazaar (1975). Some of his works of fiction have been adapted as feature films. He was awarded the 1981 James Tait Black Memorial Prize for his novel The Mosquito Coast, which was adapted for the 1986 movie of the same name and the 2021 television series of the same name.",
+            "amazon_link":"https://www.amazon.com/Paul-Theroux/e/B000APWE3G?ref=sr_ntt_srch_lnk_1&qid=1629262741&sr=1-1",
+            "profile_picture":"paultheroux.jpg",
+            "books":"Fresh-air Fiend, The Tao of Travel, The Lower River"
+        }		 
+    },
+    {
+        "pk":26,
+        "model":"products.author",
+        "fields":{
+            "name":"Pico Iyer",
+            "date_of_birth":"11th February 1957",
+            "birth_country":"England",
+            "summary":"Siddharth Pico Raghavan Iyer (born 11 February 1957), known as Pico Iyer, is a British-born essayist and novelist known for his travel writing. He is the author of numerous books on crossing cultures including Video Night in Kathmandu, The Lady and the Monk and The Global Soul. He has been a contributor to Time, Harper's, The New York Review of Books, and The New York Times.",
+            "amazon_link":"https://www.amazon.com/Pico-Iyer/e/B004MRADBI?ref=sr_ntt_srch_lnk_1&qid=1629262786&sr=1-1",
+            "profile_picture":"picoiyer.jpg",
+            "books":"A Beginner's Guide to Japan: Observations and Provocations, Falling Off The Map: Some Lonely Places of the World, Autumn Light: Season of Fire and Farewells"
+        }
+    }
+]

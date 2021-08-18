@@ -26,7 +26,8 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2,
                                  null=True, blank=True)
     has_formats = models.BooleanField(default=False, null=True, blank=True)
-    author = models.CharField(max_length=254, null=True, blank=True)
+    author = models.ForeignKey('Author', null=True, blank=True,
+                               on_delete=models.SET_NULL)
     new_release = models.BooleanField(default=False, null=True, blank=True)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
@@ -35,9 +36,14 @@ class Product(models.Model):
         return self.name
 
 
-class Format(models.Model):
-    name = models.CharField(max_length=64, null=True, blank=True)
-    extra_price = models.DecimalField(max_digits=6, decimal_places=2)
+class Author(models.Model):
+    name = models.CharField(max_length=128)
+    date_of_birth = models.CharField(max_length=254, null=True, blank=True)
+    summary = models.TextField()
+    amazon_link = models.URLField(max_length=1024, null=True, blank=True)
+    birth_country = models.CharField(max_length=254, null=True, blank=True)
+    profile_picture = models.ImageField(null=True, blank=True)
+    books = models.CharField(max_length=1024, null=True, blank=True)
 
     def __str__(self):
         return self.name
