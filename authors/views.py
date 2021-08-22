@@ -11,9 +11,27 @@ def all_authors(request):
     """ A view to show all authors """
 
     authors = Author.objects.all()
+    sort = None
+    direction = None
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                authors = authors.annotate(lower_name=Lower('name'))
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            authors = authors.order_by(sortkey)
+
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'authors': authors,
+        'current_sorting': current_sorting,
     }
 
     return render(request, "authors/authors.html", context)
