@@ -332,3 +332,7 @@ input[name='q']::placeholder {
 .author-profile-picture-round {
     border-radius: 50% !important;
 }
+
+.no-underlining:hover {
+    text-decoration: none;
+}

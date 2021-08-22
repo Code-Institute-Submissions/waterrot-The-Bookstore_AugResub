@@ -54,22 +54,24 @@
                                         <img class="card-img-top img-fluid author-profile-picture-round" src="{{ MEDIA_URL }}noimage.png" alt="{{ author.name }}">
                                     </a>
                                     {% endif %}
-                                    <div class="card-body pb-0 mb-0">
-                                        <p class="mb-0 font-weight-bold">{{ author.name }}</p>
-                                    </div>
-                                    <div class="card-footer bg-white pt-0 border-0 text-left">
-                                        <div class="row">
-                                            <div class="col">
-                                                <p class="mb-0 text-left">{{ author.summary|truncatechars:100 }}</p>
-                                                {% if request.user.is_superuser %}
-                                                    <small class="ml-3">
-                                                        <a href="{% url 'edit_author' author.id %}">Edit</a> | 
-                                                        <a class="text-danger" href="{% url 'delete_author' author.id %}">Delete</a>
-                                                    </small>
-                                                {% endif %}
+                                    <a href="{% url 'author_detail' author.id %}" class="text-dark no-underlining">
+                                        <div class="card-body pb-0 mb-0">
+                                            <p class="mb-0 font-weight-bold">{{ author.name }}</p>
+                                        </div>
+                                        <div class="card-footer bg-white pt-0 border-0 text-left">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p class="mb-0 text-left">{{ author.summary|truncatechars:100 }}</p>
+                                                    {% if request.user.is_superuser %}
+                                                        <small class="ml-3">
+                                                            <a href="{% url 'edit_author' author.id %}">Edit</a> | 
+                                                            <a class="text-danger" href="{% url 'delete_author' author.id %}">Delete</a>
+                                                        </small>
+                                                    {% endif %}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             {% if forloop.counter|divisibleby:1 %}
