@@ -41,13 +41,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-5">
                         {% for author in authors %}
                             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                                <div class="card h-100 border-0">
+                                <div class="card h-100 border-2px">
                                     {% if author.profile_picture %}
                                     <a href="{% url 'author_detail' author.id %}">
-                                        <img class="card-img-top img-fluid author-profile-picture-round" src="{{ author.profile_picture.url }}" alt="{{ author.name }}">
+                                        <img class="card-img-top img-fluid author-profile-picture" src="{{ author.profile_picture.url }}" alt="{{ author.name }}">
                                     </a>
                                     {% else %}
                                     <a href="{% url 'author_detail' author.id %}">

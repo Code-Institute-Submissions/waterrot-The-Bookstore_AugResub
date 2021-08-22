@@ -328,9 +328,19 @@ input[name='q']::placeholder {
 }
 
 /* styling author-page */
+
+/* card border */
+.border-2px {
+    border: 2px solid rgba(0,0,0,.125);
+}
+
 /* image styling */
-.author-profile-picture-round {
+.author-profile-picture {
+    width: 90%;
     border-radius: 50% !important;
+    display:block;
+    margin:auto;
+    margin-top: 5px;
 }
 
 .no-underlining:hover {
