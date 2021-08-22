@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from products.models import Author
+from products.models import Author, Product
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
@@ -41,12 +41,14 @@ def author_detail(request, author_id):
     """ A view to show individual authors details """
 
     author = get_object_or_404(Author, pk=author_id)
+    products = Product.objects.all().filter(author=author_id)
 
     context = {
         'author': author,
+        'products': products,
     }
 
-    return render(request, 'author/author_detail.html', context)
+    return render(request, 'authors/author_detail.html', context)
 
 
 @login_required
