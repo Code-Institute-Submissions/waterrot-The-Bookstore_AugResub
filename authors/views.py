@@ -10,7 +10,12 @@ from products.forms import ProductForm
 def all_authors(request):
     """ A view to show all authors """
 
-    
+    authors = Author.objects.all()
+
+    context = {
+        'authors': authors,
+    }
+
     return render(request, "authors/authors.html", context)
 
 

@@ -326,3 +326,9 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+/* styling author-page */
+/* image styling */
+.author-profile-picture-round {
+    border-radius: 50% !important;
+}
