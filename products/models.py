@@ -28,7 +28,8 @@ class Product(models.Model):
     has_formats = models.BooleanField(default=False, null=True, blank=True)
     author = models.ForeignKey('Author', null=True, blank=True,
                                on_delete=models.SET_NULL)
-    new_release = models.BooleanField(default=False, null=True, blank=True)
+    new_release = models.ForeignKey('Release', null=True, blank=True,
+                                    on_delete=models.SET_NULL)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
@@ -44,6 +45,14 @@ class Author(models.Model):
     birth_country = models.CharField(max_length=254, null=True, blank=True)
     profile_picture = models.ImageField(null=True, blank=True)
     books = models.CharField(max_length=1024, null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Release(models.Model):
+    name = models.CharField(max_length=128)
+    photo = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name

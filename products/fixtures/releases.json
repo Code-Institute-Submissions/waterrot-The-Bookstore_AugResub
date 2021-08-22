@@ -1,0 +1,18 @@
+[
+    {
+        "pk":1,
+        "model":"products.release",
+        "fields":{
+            "name":"Not a new release",
+            "photo":"noimage.png"
+        }		
+    },
+    {
+        "pk":2,
+        "model":"products.release",
+        "fields":{
+            "name":"new release!",
+            "photo": "new_release.png"
+        }	
+    }
+]
