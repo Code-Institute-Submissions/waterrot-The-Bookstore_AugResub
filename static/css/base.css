@@ -274,18 +274,10 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
-
-    .header-container {
-        padding-top: 164px;
-    }
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
     body {
         height: calc(100vh - 116px);
     }
@@ -345,4 +337,8 @@ input[name='q']::placeholder {
 
 .no-underlining:hover {
     text-decoration: none;
+}
+
+.max-logo {
+    max-width: 80%;
 }
