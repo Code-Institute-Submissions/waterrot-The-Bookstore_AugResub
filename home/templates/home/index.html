@@ -62,8 +62,57 @@
                 </h1>
                 <div class="my-3">
                     <h4>
-                        <a href="{% url 'products' %}" class="btn btn-lg btn-danger rounded-0 text-uppercase py-3">Check it out!</a>
+                        <a href="{% url 'products'%}?release=new_release!" class="btn btn-lg btn-danger rounded-0 text-uppercase py-3">Check it out!</a>
                     </h4>
+                </div>
+            </div>
+        </div>
+        <div class="row background-color-home-white pt-5">
+            <div class="col-12">
+                <h1 class="text-center">What we recommend:</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row background-color-home-white pt-5">
+            <div class="col-sm-6 col-md-6 col-lg-4 ml-3">
+                <div class="card h-100 border-0">
+                    {% if new_release_1.image %}
+                    <a href="{% url 'product_detail' new_release_1.id %}">
+                        <img class="card-img-top img-fluid" src="{{ new_release_1.image.url }}" alt="{{ new_release_1.name }}">
+                    </a>
+                    {% else %}
+                    <a href="{% url 'product_detail' new_release_1.id %}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ new_release_1.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body pb-0">
+                        <p class="mb-0">{{ new_release_1.name }}</p>
+                    </div>
+                    <div class="card-footer bg-white pt-0 border-0 text-left">
+                        <div class="row">
+                            <div class="col">
+                                <p class="lead mb-0 text-left font-weight-bold">${{ new_release_1.price }}</p>
+                                {% if new_release_1.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="text-muted" href="{% url 'products' %}?category={{ new_release_1.category.name }}">
+                                        <i class="fas fa-tag mr-1"></i>{{ new_release_1.category.friendly_name }}
+                                    </a>
+                                </p>
+                                {% endif %}
+                                {% if new_release_1.rating %}
+                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ new_release_1.rating }} / 5</small>
+                                {% else %}
+                                    <small class="text-muted">No Rating</small>
+                                {% endif %}
+                                {% if request.user.is_superuser %}
+                                    <small class="ml-3">
+                                        <a href="{% url 'edit_product' new_release_1.id %}">Edit</a> | 
+                                        <a class="text-danger" href="{% url 'delete_product' new_release_1.id %}">Delete</a>
+                                    </small>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,5 +128,27 @@
     {{ block.super }}
     <script type="text/javascript">
         $('.carousel').carousel()
+    </script>
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
     </script>
 {% endblock %}
