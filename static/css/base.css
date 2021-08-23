@@ -342,3 +342,12 @@ input[name='q']::placeholder {
 .max-logo {
     max-width: 80%;
 }
+
+/* styling homepage */
+.background-color-home {
+    background-color:rgba(52, 58, 64, 0.5) !important;
+}
+
+.background-color-home-white {
+    background-color: rgba(255,255,2555,0.95) !important;
+}
