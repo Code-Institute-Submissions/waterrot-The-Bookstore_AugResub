@@ -3,16 +3,16 @@
         "pk":1,
         "model":"products.release",
         "fields":{
-            "name":"Not a new release",
-            "photo":"noimage.png"
+            "name":"Not_a_new_release",
+            "new": false
         }		
     },
     {
         "pk":2,
         "model":"products.release",
         "fields":{
-            "name":"new release!",
-            "photo": "new_release.png"
+            "name":"new_release!",
+            "new": true
         }	
     }
 ]

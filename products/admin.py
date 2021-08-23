@@ -33,7 +33,7 @@ class AuthorAdmin(admin.ModelAdmin):
 class ReleaseAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'photo',
+        'new',
     )
 
 

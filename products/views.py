@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from .models import Product, Category, Author
+from .models import Product, Category, Author, Release
 from django.db.models import Q
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -14,6 +14,7 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    releases = None
     sort = None
     direction = None
 
@@ -32,10 +33,17 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
+        # code to filter through the different categories
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+        # code to filter through the new releases
+        if 'new_release' in request.GET:
+            releases = request.GET['new_release'].split(',')
+            products = products.filter(release__name__in=releases)
+            releases = Release.objects.filter(name__in=releases)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -55,6 +63,7 @@ def all_products(request):
         'products': products,
         'search_term': query,
         'current_categories': categories,
+        'current_releases': releases,
         'current_sorting': current_sorting,
     }
 

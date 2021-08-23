@@ -62,12 +62,6 @@
                                             <div class="row">
                                                 <div class="col">
                                                     <p class="mb-0 text-left">{{ author.summary|truncatechars:100 }}</p>
-                                                    {% if request.user.is_superuser %}
-                                                        <small class="ml-3">
-                                                            <a href="{% url 'edit_author' author.id %}">Edit</a> | 
-                                                            <a class="text-danger" href="{% url 'delete_author' author.id %}">Delete</a>
-                                                        </small>
-                                                    {% endif %}
                                                 </div>
                                             </div>
                                         </div>
