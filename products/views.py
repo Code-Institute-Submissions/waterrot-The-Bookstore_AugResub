@@ -40,8 +40,8 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
 
         # code to filter through the new releases
-        if 'new_release' in request.GET:
-            releases = request.GET['new_release'].split(',')
+        if 'release' in request.GET:
+            releases = request.GET['release'].split(',')
             products = products.filter(release__name__in=releases)
             releases = Release.objects.filter(name__in=releases)
 
@@ -127,8 +127,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure \
-                the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure' +
+                                    'the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')

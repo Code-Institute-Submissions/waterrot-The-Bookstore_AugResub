@@ -3,7 +3,7 @@
         "pk":1,
         "model":"products.release",
         "fields":{
-            "name":"Not_a_new_release",
+            "name":"not_a_new_release",
             "new": false
         }		
     },
