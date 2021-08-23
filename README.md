@@ -30,6 +30,8 @@ The Bookshop is a website designed to light out some of the best books writen ov
 
 The site will be deployed to Heroku and can then be viewed [here](https://the-bookstore-holland.herokuapp.com/).
 
+If anyone needs admin rights for the examination you can contact me on oudloosdrecht@gmail.com .
+
 ## UX
 
 ### Project Goal
@@ -74,7 +76,7 @@ This project is my fourth and final Milestone Project in the Code Institute's Fu
 
 Following these user stories, wireframes were drawn to provide a starting point and guidance throughout the development process.
 
-*this is the place where the wireframe will be in the future*
+![wireframe](media/wireframe.jpg)
 
 ### Data Structure
 
@@ -116,7 +118,6 @@ Colors are chosen to stand out. The buttons needed to be an eye catcher and the 
 #### profile page
 - see your order history.
 - edit your personal information.
-- add new products
 
 #### author page
 - browse through the different authors.
@@ -127,14 +128,23 @@ Colors are chosen to stand out. The buttons needed to be an eye catcher and the 
 - go to the amazon page of the other.
 - see the other books the author has writen.
 
+#### administration page
+- add/edit/delete books/categories
+
 
 ### Features Left to implement
-- add new authors
-
-
+- add new authors functionallity
+- add recommended books to book information page.
+- a contact information field.
 
 ## Testing
+Testing was done manually throughout the development process.
 
+Additionally, all code was validated in the following ways:
+
+**HTML** - All pages were run through the [W3C HTML Validator](https://validator.w3.org/). Almost everything is fixed, but due to a lack of time there are still some things that need to bee= fixed.
+
+**CSS** - CSS validation with the [W3C Jigsaw Validator](https://jigsaw.w3.org/css-validator/) returned some expected and necessary flags from vendor extensions. Other than that, the code complies to the W3C standards.
 
 ## Deployment
 
@@ -167,7 +177,7 @@ These are the steps to deploy Beer WareHaus locally.
 4.  The application can now be run locally. In your terminal, type the command `python3 manage.py runserver`. The application will be available in your browser at the address `http://localhost:8000`.
 
 ### Deployment to Heroku
-
+Here your find the [link](https://the-bookstore-holland.herokuapp.com/)
 
 
 ## Technologies
@@ -182,12 +192,15 @@ These are the steps to deploy Beer WareHaus locally.
 
 -   Github
 -   Heroku
+-   [Bootswatch](https://bootswatch.com/)
 -   [Google Fonts](https://fonts.google.com/)
 -   [Font Awesome](https://fontawesome.com/)
 
 ## Credits
 
 ### Media
+The media files were found on Google and Amazon. Not all photo's are allowed to be used for economic goals so if the shop wants to go live with real money the dataset need some changes. All the 101 books and 26 authors are found by hand and put into a json file. This took a really long time to collect the data and all the photo's with it.
+
 
 ### Acknowledgements
 
