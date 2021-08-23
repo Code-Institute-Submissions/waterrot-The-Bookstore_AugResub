@@ -27,17 +27,17 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <a href="{% url 'products'%}?category=horror"">
-                                <img class="d-block w-100" src="/media/book-horror.jpg" alt="Horror promotion">
+                                <img class="d-block w-100" src="{{ MEDIA_URL }}book-horror.jpg" alt="Horror promotion">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="{% url 'products'%}?category=cooking">
-                                <img class="d-block w-100" src="/media/best-cooking-books.png" alt="Cooking promotion">
+                                <img class="d-block w-100" src="{{ MEDIA_URL }}best-cooking-books.png" alt="Cooking promotion">
                             </a>
                         </div>
                         <div class="carousel-item">
                             <a href="{% url 'products'%}?release=new_release!">
-                                <img class="d-block w-100" src="/media/new-arrival-1.jpg" alt="New arrivals promotion">
+                                <img class="d-block w-100" src="{{ MEDIA_URL }}new-arrival-1.jpg" alt="New arrivals promotion">
                             </a>
                         </div>
                     </div>
