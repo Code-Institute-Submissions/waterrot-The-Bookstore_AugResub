@@ -1,5 +1,7 @@
+![The Bookstore Holland Logo](media/thebookstore_logo.png)
 # The Bookstore Holland
 
+- [intro](#intro)
 - [UX](#ux)
   - [Project Goal](#project-goal)
   - [User Stories](#user-stories)
@@ -8,8 +10,6 @@
   - [Wireframes](#wireframes)
   - [Data Structure](#data-structure)
   - [Design](#design)
-    - [Typography](#typography)
-    - [Colors](#colors)
 - [Features](#features)
   - [Existing Features](#existing-features)
   - [Features Left to implement](#features-left-to-implement)
@@ -25,9 +25,10 @@
 
 ---
 
-The Bookshop is a website designed to light out some of the best books made in the previous 40 years. 
+## Intro
+The Bookshop is a website designed to light out some of the best books writen over the last 100 years. Right now the shop has 101 product, writen by 26 authors.
 
-The site will be deployed to Heroku and can then be viewed [here]().
+The site will be deployed to Heroku and can then be viewed [here](https://the-bookstore-holland.herokuapp.com/).
 
 ## UX
 
@@ -58,16 +59,14 @@ This project is my fourth and final Milestone Project in the Code Institute's Fu
 | See details about a product                        | make an informed purchasing decision                 |
 | View my order history                              | be reminded of previous purchases                    |
 | Receive an email confirmation about my order       | have archived information about it                   |
-| Contact the website                                | get in touch if there are problems wirh the delivery |
+
 
 #### User Stories for Shop Administrators
 
 | **As an administrator I would like to**     | **So that I can**                                |
 | ------------------------------------------- | ------------------------------------------------ |
 | Add/Update/Remove a book                    | keep the store up to date                        |
-| Add/Update/Remove a author                  | keep users informed about the latest information |
 | Add/Update/Remove a category                | create a more diversified offer                  |
-| Highlight specific books                    | sell books that need to move                     |
 | Receive orders from customers in my mailbox | fulfill the orders                               |
 | Mark a book as a new arrival                | entice customers with fresh products             |
 
@@ -85,19 +84,54 @@ Before starting the development of the application, its models and their relatio
 
 ### Design
 
-The application was built using bootstrap and its responsive grid system.
-Fonts and colors were carefully chosen to give the application a distinctive brand and feel.
-
-#### Typography
-
-
-#### Colors
+The application was built using bootstrap and its responsive grid system. The main layout is based on [Lux](https://bootswatch.com/lux/), while Bootswatch works really well with bootstrap.
+Colors are chosen to stand out. The buttons needed to be an eye catcher and the normal elements needed to show some peace to the eye.
 
 ## Features
 
 ### Existing Features
 
+#### home page
+- the homepage shows a carousel that links to 3 different part on the site to give those products more attention.
+- the homepage shows 3 new books chosen by the owner of the site that are very good seller.
+
+#### product pages
+- browser through different products and use filters for it. 
+- click on one of the category buttons to go directly to the category search page.
+
+#### product information page
+- read more information about the product.
+- select the format you would like the book in and see live how the price changes.
+- select the quantity and buy the product and send it to the shopping bag.
+
+#### shopping bag page
+- remove/add/edit the products in your shopping bag.
+- continue to the payout page.
+
+#### checkout page
+- fill in your delivery address.
+- fill in your creditcard information.
+- continue to buy the product.
+
+#### profile page
+- see your order history.
+- edit your personal information.
+- add new products
+
+#### author page
+- browse through the different authors.
+- filter them by name.
+
+#### author information page
+- read more about an other.
+- go to the amazon page of the other.
+- see the other books the author has writen.
+
+
 ### Features Left to implement
+- add new authors
+
+
 
 ## Testing
 
