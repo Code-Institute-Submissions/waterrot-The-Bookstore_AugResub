@@ -41,7 +41,6 @@ def bag_contents(request):
                 'total_price_item': total_price_item,
                 'price_per_item': price_per_item,
                 'item_format': item_format,
-                'format': format,
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
